@@ -1,0 +1,68 @@
+.homepage {
+    &__container {
+        display: flex;
+        justify-content: center;
+        padding: 10rem 0;
+
+        &_cards {
+            display: flex;
+
+            &__item {
+                &:not(:first-child) {
+                    margin: 0 0 0 2rem;
+                }
+
+                &__container {
+                    border: 1px solid #bbbaba;
+                    border-radius: 1rem;
+
+                    &__image {
+                        width: 40rem;
+                        height: 30rem;
+                        border-radius: 1rem 1rem 0 0;
+                    }
+
+                    &__content {
+                        padding: 2rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        &__heading {
+                            font-size: 2rem;
+                            color: $color-black;
+                        }
+
+                        &__subheading {
+                            margin: 1rem 0 0 0;
+                            font-size: 2rem;
+                            color: $color-black;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__action {
+            &__container {
+                margin: 0 0 0 5rem;
+                display: flex;
+                flex-direction: column;
+
+                &__label {
+                    font-size: 1.5rem;
+                    color: $color-black;
+                    font-weight: 600;
+                }
+
+                &__select {
+                    padding: 1rem;
+                    margin: 1rem 0 0 0;
+                }
+
+                &__option {
+                }
+            }
+        }
+    }
+}
